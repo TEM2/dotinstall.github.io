@@ -1,10 +1,46 @@
 header h1{
-  font-size: 24px;
+  font-size: 40px;
+  width: 300px;
   padding-bottom: 8px;
   border-bottom: 1px solid #ddd;
   background-color: aqua;
+  animation-name: move;
+  animation-duration: 2s;
 }
+
+
+@keyframes move {
+  0% {
+    transform: none;
+  }
+  80% {
+    transform: translateX(200px) rotate(360deg);
+  }
+  100% {
+    transform: translateX(300px) rotate(360deg);
+  }
+}
+
+
+
 
 main h1{
   background-color: pink;
+  animation-name: move;
+  animation-duration: 2s;
+  width: 300px;
+
+}
+main h2{
+  background-color: burlywood;
+  animation-name: move;
+  animation-duration: 2s;
+  width: 300px;
+
+}
+main h3{
+  background-color: red;
+  animation-name: move;
+  animation-duration: 2s;
+  width: 300px;
 }
